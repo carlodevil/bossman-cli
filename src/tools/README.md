@@ -3,10 +3,11 @@ How to import scripts
 
 To use these functions in your shell script, you need to first import them. Assuming that all of the functions are in their own `.sh` files with the same name as the function itself (e.g. `build_path.sh`) and located in a directory called `tools`, you can import them into your script using the `source` command:
 
-bashCopy code
-        source tools/build_path.sh 
-        source tools/check_binary.sh 
-        # etc...
+```
+source tools/build_path.sh 
+    source tools/check_binary.sh 
+# etc...
+```
 
 This will make all of the functions available in your script.
 
@@ -14,10 +15,11 @@ Note that the `source` command is used to execute the contents of the specified 
 
 If you want to import all of the scripts at once, you can use a wildcard to match all of the `.sh` files in the `tools` directory:
 
-bashCopy code
-        for script in tools/*.sh; do
-            source "$script"
-        done
+```
+for script in tools/*.sh; do
+    source "$script"
+done
+```
 
 This will import all of the scripts in the `tools` directory into your script.
 
