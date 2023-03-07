@@ -7,7 +7,7 @@ bashCopy code
 
 `source tools/build_path.sh 
 source tools/check_binary.sh 
-# etc...`
+// etc...`
 
 This will make all of the functions available in your script.
 
