@@ -5,9 +5,9 @@ To use these functions in your shell script, you need to first import them. Assu
 
 bashCopy code
 
-``source tools/build_path.sh 
+`source tools/build_path.sh 
 source tools/check_binary.sh 
-# etc...``
+# etc...`
 
 This will make all of the functions available in your script.
 
@@ -17,9 +17,9 @@ If you want to import all of the scripts at once, you can use a wildcard to matc
 
 bashCopy code
 
-``for script in tools/*.sh; do
+`for script in tools/*.sh; do
     source "$script"
-done``
+done`
 
 This will import all of the scripts in the `tools` directory into your script.
 
